@@ -146,13 +146,7 @@ const usePermissions = () => {
           .find((x: Permission) => x.moduleKey === "billing")
           ?.actions.filter((a: Action) => a.selected === true).length > 0,
     },
-    {
-      id: 7,
-      name: "Perfil",
-      path: "/Home/Profile",
-      icon: <FaUserEdit className="text-fundasalud-tiber" />,
-      active: true,
-    },
+
     {
       id: 9,
       name: "Configuraciones",

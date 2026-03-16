@@ -1,0 +1,40 @@
+import { Doctor } from "@/Views/Configurations/types/doctor";
+
+export const mockDoctors: Doctor[] = [
+    {
+        id: 1,
+        name: "Carlos",
+        lastName: "Mendoza",
+        email: "carlos.mendoza@optimed.com",
+        phone: "+58 412 555 0101",
+        specialty: "Oftalmología",
+        licenseNumber: "LIC-001234",
+        identification: "V-12345678",
+        identificationType: "V",
+        status: 1,
+    },
+    {
+        id: 2,
+        name: "Ana",
+        lastName: "Torres",
+        email: "ana.torres@optimed.com",
+        phone: "+58 414 555 0202",
+        specialty: "Otorrinolaringología",
+        licenseNumber: "LIC-005678",
+        identification: "V-87654321",
+        identificationType: "V",
+        status: 1,
+    },
+    {
+        id: 3,
+        name: "Roberto",
+        lastName: "Silva",
+        email: "roberto.silva@optimed.com",
+        phone: "+58 416 555 0303",
+        specialty: "Oftalmología",
+        licenseNumber: "LIC-009012",
+        identification: "V-11223344",
+        identificationType: "V",
+        status: 0,
+    },
+];

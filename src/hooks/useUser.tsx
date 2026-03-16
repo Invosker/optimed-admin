@@ -19,9 +19,11 @@ const useUser = () => {
   const queryClient = useQueryClient();
   const root = queryClient.getQueryData<SessionShape>(["user"]);
 
-  const account = root?.user ?? root?.admin ?? null;
-  const token = root?.access_token ?? import.meta.env.VITE_TOKEN;
+  // root es ApiResponse: { status, message, data: { access_token, user/admin } }
+  const session = (root as any)?.data ?? root;
 
+  const account = session?.user ?? session?.admin ?? null;
+  const token = session?.access_token ?? import.meta.env.VITE_TOKEN;
 
   return { user: account, token };
 };

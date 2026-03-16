@@ -31,7 +31,11 @@ const router = createBrowserRouter([
       {
         path: import.meta.env.VITE_BASE_URL,
         element: (
-          <Suspense fallback={<div className="absolute top-32 left-32">Cargando...</div>}>
+          <Suspense
+            fallback={
+              <div className="absolute top-32 left-32">Cargando...</div>
+            }
+          >
             <LazyLogin />
           </Suspense>
         ),
@@ -39,7 +43,11 @@ const router = createBrowserRouter([
       {
         path: `${import.meta.env.VITE_BASE_URL}SearchProducts`,
         element: (
-          <Suspense fallback={<div className="absolute top-32 left-32">Cargando...</div>}>
+          <Suspense
+            fallback={
+              <div className="absolute top-32 left-32">Cargando...</div>
+            }
+          >
             <LazySearchProducts />
           </Suspense>
         ),
@@ -57,7 +65,11 @@ const router = createBrowserRouter([
       {
         path: `${import.meta.env.VITE_BASE_URL}Forgotten`,
         element: (
-          <Suspense fallback={<div className="absolute top-32 left-32">Cargando...</div>}>
+          <Suspense
+            fallback={
+              <div className="absolute top-32 left-32">Cargando...</div>
+            }
+          >
             <LazyForgotten />
           </Suspense>
         ),
@@ -118,7 +130,11 @@ const router = createBrowserRouter([
           {
             path: `${import.meta.env.VITE_BASE_URL}Home/Audit`,
             element: (
-              <Suspense fallback={<div className="absolute top-32 left-32">Cargando...</div>}>
+              <Suspense
+                fallback={
+                  <div className="absolute top-32 left-32">Cargando...</div>
+                }
+              >
                 <LazyAudit />
               </Suspense>
             ),
@@ -152,14 +168,6 @@ const router = createBrowserRouter([
             element: (
               <Suspense fallback={<div>Cargando...</div>}>
                 <LazyProductReplacement />
-              </Suspense>
-            ),
-          },
-          {
-            path: `${import.meta.env.VITE_BASE_URL}Home/Profile`,
-            element: (
-              <Suspense fallback={<div>Cargando...</div>}>
-                <LazyProfile />
               </Suspense>
             ),
           },
