@@ -1,0 +1,69 @@
+########################
+# Node / Package Mgmt
+########################
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+.yarn-cache/
+package-lock.json
+# (Mantén yarn.lock / pnpm-lock.yaml si los usas, NO los ignores)
+
+########################
+# Build / Output
+########################
+dist/
+build/
+out/
+lib/
+.esbuild/
+.vite/
+node_modules/.vite/
+*.tsbuildinfo
+
+########################
+# Test / Coverage / Reports
+########################
+coverage/
+.vitest/
+jest-html-reporters-*.html
+junit.xml
+
+########################
+# Logs
+########################
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+########################
+# Env Files
+########################
+.env
+.env.*
+.env.*.local
+*.env.local
+
+########################
+# Editor / OS
+########################
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+########################
+# Misc caches
+########################
+*.cache
+.cache/
+.stylelintcache
+.eslintcache
+turbo/
+.next/
+.sass-cache/
+.vercel/

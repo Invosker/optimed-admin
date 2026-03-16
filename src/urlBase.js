@@ -1,0 +1,1 @@
+export const urlBase = import.meta.env.MODE === 'production' ? '/sigehvi/front/public/' : '/'

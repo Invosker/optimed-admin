@@ -1,0 +1,28 @@
+{
+  // Remove the top-level "baseUrl": "."
+  // "baseUrl": ".", // <-- REMOVE THIS LINE
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    // ... other options
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    // Ensure this baseUrl is correct for where your aliased folders start
+    "baseUrl": "./src", // <-- Keep this one inside compilerOptions
+    "paths": {
+      "@/*": [
+        "*" // <-- CHANGE THIS FROM "src/*" TO "*"
+        // This means "@/" maps directly to the baseUrl ("./src")
+      ]
+    },
+    // ... other options
+  },
+  // ... other configurations
+}
